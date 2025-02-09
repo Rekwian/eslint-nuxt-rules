@@ -1,4 +1,4 @@
-# eslint-oi-nuxt-rules
+# eslint-nuxt-rules
 
 ## Description
 
