@@ -10,18 +10,18 @@
 
 ### Étape 1 : Pré-requis
 
-Avant d'installer `eslint-oi-nuxt-rules`, il est nécessaire d'installer les packages suivants :
+Avant d'installer `eslint-nuxt-rules`, il est nécessaire d'installer les packages suivants :
 
 ```bash
-npm install eslint eslint-config-airbnb-base eslint-plugin-vue-pug @eslint/eslintrc @nuxt/eslint --save-dev
+bun add eslint eslint-config-airbnb-base eslint-plugin-vue-pug @eslint/eslintrc @nuxt/eslint --D
 ```
 
-### Étape 2 : Installer eslint-oi-nuxt-rules
+### Étape 2 : Installer eslint-nuxt-rules
 
 Installez la dépendance :
 
 ```bash
-npm install git+ssh://git@bitbucket.org:proprietes-privees/eslint-oi-nuxt-rules --save-dev
+bun add github:Rekwian/eslint-nuxt-rules -D
 ```
 
 ### Étape 3 : Configurer ESLint
@@ -80,7 +80,7 @@ Ajoutez la configuration suivante dans le fichier eslint.config.js :
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
-import { vuePugConfig, airBnbConfig, customConfig } from 'eslint-oi-nuxt-rules';
+import { vuePugConfig, airBnbConfig, customConfig } from 'eslint-nuxt-rules';
 import { withNuxt } from './.nuxt/eslint.config.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
