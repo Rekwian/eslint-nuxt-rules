@@ -1,0 +1,6 @@
+{
+  "name": "eslint-oi-nuxt-rules",
+  "version": "1.0.1",
+  "main": "index.js",
+  "type": "module"
+}
